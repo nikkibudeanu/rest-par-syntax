@@ -20,3 +20,17 @@ const sumRest =(a, b, c, ...rest)=>{
 }
 let sum3 = sumRest(1, 2, 3, 4, 5, 6);
 console.log("Sum:", sum3)
+
+//rest parameter challenge
+let mixedLetters = ['b', 'd', 'a', 'c', 'f', 'e'];
+let moreMixedLetters = [...mixedLetters, 'h', 'k', 'g', 'j', 'i', 'l' ]
+
+console.log(moreMixedLetters);
+
+const updateSortReverse = (arr, ...letters) => [...arr, ...letters].sort().reverse();
+
+let reverseSort = updateSortReverse(moreMixedLetters, 'n', 'm', 'o');
+console.log(reverseSort);
+console.log(mixedLetters);
+
+
